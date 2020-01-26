@@ -1,0 +1,124 @@
+.profile-search {
+  border: 0;
+  margin: 2rem 1rem;
+  padding: 1rem 2rem;
+  width: 450px;
+  border-radius: 99px;
+  font-size: 1rem;
+  font-family: Montserrat;
+  outline: none;
+}
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+  height: 3rem;
+  width: 3rem;
+  background: transparent;
+  border: none;
+  border-radius: 99px;
+  margin: 0;
+  text-decoration: none;
+  background: white;
+  color: #ffffff;
+  cursor: pointer;
+}
+.search-icon > img {
+  height: 1.7rem;
+}
+.search-row {
+  display: flex;
+  align-items: center;
+}
+.profile-content {
+  margin-bottom: 5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
+}
+
+.prof-picture {
+  border-radius: 99px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile-content {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-content > * {
+  text-align: center;
+}
+.upper-light {
+  padding: 1rem;
+}
+
+.file-row {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.file-row > file {
+  display: block;
+  padding: 2rem;
+}
+.loader {
+  background-image: linear-gradient(30deg, #a1c4fd 0%, #0070ad 100%);
+  border-radius: 99px;
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  animation: load 1.2s infinite;
+  transform: scale(1) rotate(0deg);
+  opacity: 0.8;
+}
+@keyframes load {
+  0% {
+    transform: scale(1) rotate(0deg);
+
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(2) rotate(180deg);
+
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 900px) {
+  .profile-search {
+    padding: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .file-row {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: flex-start;
+  }
+  .file-row > input {
+    transform: translateX(-30%);
+    padding: 1rem;
+  }
+}

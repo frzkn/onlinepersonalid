@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "connect-multiparty": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "imgur": "^0.3.1",
+    "imgur-file-module": "^1.0.0",
+    "osmosis": "^1.1.10",
+    "puppeteer": "^2.0.0",
+    "request": "^2.88.0",
+    "reverse-image-search": "0.0.0",
+    "reverse-image-search-google": "^1.0.1",
+    "scrapedin": "^1.0.11"
+  }
+}
